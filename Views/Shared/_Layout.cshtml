@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Overall Layout page to be shared between all pages-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<!-- Main default layout for all pages within Bookstore site-->
+<body>
+    <div class="bg-dark text-white p-2">
+        <span class="navbar-brand ml-2">HILTON'S BOOKS</span>
+    </div>
+    <div class="row m-1 p-1">
+        <div class="col-9">
+            @RenderBody()
+        </div>
+        <div class="col-3 p-5">
+            <h3>Category</h3>
+            <vc:navigation-menu />
+        </div>
+    </div>
+</body>
+</html>
